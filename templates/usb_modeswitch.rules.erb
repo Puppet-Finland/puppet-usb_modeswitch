@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="<%= @idvendor %>", ATTRS{idProduct}=="<%= @idproduct %>", RUN+="/usr/sbin/usb_modeswitch --vendor <%= @target_vendor %> --product <%= @target_product %> --type option-zerocd"
